@@ -10,11 +10,43 @@ let pElement = document.getElementById('req-2');
 pElement.style.fontWeight = "bold";
 
 // 3
-let imgElement = document.getElementsByTagName(img).src = "/image.png";
+let imgElement = document.getElementsByTagName('img')[0].src = "/image.png";
 
 // 4
-let ul = document.getElementById("list");
-let item1 = document.createElement('li').innerText = "one";
-ul.appendChild = item1;
+let ul = document.querySelector("#list");
+let item1 = document.createElement('li');
+let item2 = document.createElement('li');
+let item3 = document.createElement('li');
 
+item1.innerText = "one";
+item2.innerText = "two";
+item3.innerText = "three";
+ul.appendChild(item1);
+ul.appendChild(item2);
+ul.appendChild(item3);
 
+// 5
+let table = document.createElement("table");
+let row1 = document.createElement('tr');
+let row2 = document.createElement('tr');
+row1.innerText = "row 1";
+row2.innerText = "row 2";
+
+let col1 = document.createElement('td');
+let col2 = document.createElement('td');
+let col3 = document.createElement('td');
+
+col1.innerText = "col 1";
+col2.innerText = "col 2";
+col3.innerText = "col 1";
+
+row1.appendChild(col1);
+row1.appendChild(col2);
+row1.appendChild(col3);
+row2.appendChild(col1);
+row2.appendChild(col2);
+row2.appendChild(col3);
+table.appendChild(row1);
+table.appendChild(row2);
+
+document.body.appendChild(table)
