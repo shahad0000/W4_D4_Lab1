@@ -29,8 +29,7 @@ ul.appendChild(item3);
 let table = document.createElement("table");
 let row1 = document.createElement('tr');
 let row2 = document.createElement('tr');
-row1.innerText = "row 1";
-row2.innerText = "row 2";
+
 
 let col1 = document.createElement('td');
 let col2 = document.createElement('td');
@@ -38,14 +37,16 @@ let col3 = document.createElement('td');
 
 col1.innerText = "col 1";
 col2.innerText = "col 2";
-col3.innerText = "col 1";
+col3.innerText = "col 3";
 
 row1.appendChild(col1);
 row1.appendChild(col2);
 row1.appendChild(col3);
+
 row2.appendChild(col1);
 row2.appendChild(col2);
 row2.appendChild(col3);
+
 table.appendChild(row1);
 table.appendChild(row2);
 
