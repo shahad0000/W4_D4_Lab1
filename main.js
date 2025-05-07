@@ -18,9 +18,22 @@ let item1 = document.createElement('li');
 let item2 = document.createElement('li');
 let item3 = document.createElement('li');
 
+item1.style.border = "1px solid gray";
+item2.style.border = "1px solid gray";
+item3.style.border = "1px solid gray";
+
+item1.style.color = "darkblue";
+item2.style.color = "darkblue";
+item3.style.color = "darkblue";
+
+item1.style.display = "inline";
+item2.style.display = "inline";
+item3.style.display = "inline";
+
 item1.innerText = "one";
 item2.innerText = "two";
 item3.innerText = "three";
+
 ul.appendChild(item1);
 ul.appendChild(item2);
 ul.appendChild(item3);
