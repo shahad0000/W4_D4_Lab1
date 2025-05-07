@@ -34,18 +34,19 @@ let row2 = document.createElement('tr');
 let col1 = document.createElement('td');
 let col2 = document.createElement('td');
 let col3 = document.createElement('td');
+let col4 = document.createElement('td');
 
 col1.innerText = "col 1";
 col2.innerText = "col 2";
 col3.innerText = "col 3";
+col4.innerText = "col 4";
+
 
 row1.appendChild(col1);
 row1.appendChild(col2);
-row1.appendChild(col3);
 
-row2.appendChild(col1);
-row2.appendChild(col2);
 row2.appendChild(col3);
+row2.appendChild(col4);
 
 table.appendChild(row1);
 table.appendChild(row2);
