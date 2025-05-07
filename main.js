@@ -10,7 +10,9 @@ let pElement = document.getElementById('req-2');
 pElement.style.fontWeight = "bold";
 
 // 3
-let imgElement = document.getElementsByTagName('img')[0].src = "/image.png";
+let imgElement = document.getElementsByTagName('img')[0];
+imgElement.src = "/image.png"
+imgElement.style.width = "300px";
 
 // 4
 let ul = document.querySelector("#list");
@@ -33,6 +35,10 @@ item3.style.display = "inline";
 item1.innerText = "one";
 item2.innerText = "two";
 item3.innerText = "three";
+
+item2.style.margin = "2em";
+
+
 
 ul.appendChild(item1);
 ul.appendChild(item2);
